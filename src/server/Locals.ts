@@ -4,13 +4,13 @@ class Locals {
   public static config(): any {
     dotenv.config();
     const environment = process.env.NODE_ENV;
-    const port = process.env.REDFISH_PORT;
-    const appUri = process.env.REDFISH_URI;
+    const port = process.env.ZAPI_PORT;
+    const appUri = process.env.ZAPI_URI;
     const callEmulator = process.env.CALL_EMULATOR;
     const emulatorUri = process.env.EMULATOR_URI;
-    const apiVersion = process.env.REDFISH_VERSION;
+    const apiVersion = process.env.ZAPI_VERSION;
     const isCORSEnabled = process.env.CORS_ENABLED;
-    const apiPrefix = process.env.REDFISH_PREFIX;
+    const apiPrefix = process.env.ZAPI_PREFIX;
 
     return {
       environment,
